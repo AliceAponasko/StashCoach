@@ -10,11 +10,15 @@
 		005D24AD201E627300F2C0C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005D24AC201E627300F2C0C7 /* AppDelegate.swift */; };
 		005D24C2201E627300F2C0C7 /* StashCoachTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005D24C1201E627300F2C0C7 /* StashCoachTests.swift */; };
 		005D24CD201E627300F2C0C7 /* StashCoachUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005D24CC201E627300F2C0C7 /* StashCoachUITests.swift */; };
-		005D24E6201E634500F2C0C7 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 005D24E2201E634500F2C0C7 /* Info.plist */; };
 		005D24E7201E634500F2C0C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 005D24E3201E634500F2C0C7 /* Assets.xcassets */; };
 		005D24EC201E635500F2C0C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 005D24E8201E635500F2C0C7 /* LaunchScreen.storyboard */; };
 		005D24ED201E635500F2C0C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 005D24EA201E635500F2C0C7 /* Main.storyboard */; };
 		005D24EF201E67E200F2C0C7 /* achievements.json in Resources */ = {isa = PBXBuildFile; fileRef = 005D24EE201E67E200F2C0C7 /* achievements.json */; };
+		005D24FE201E6A3C00F2C0C7 /* AchievementsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005D24FD201E6A3C00F2C0C7 /* AchievementsViewController.swift */; };
+		005D2500201E6AD900F2C0C7 /* AchievementLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005D24FF201E6AD900F2C0C7 /* AchievementLoadable.swift */; };
+		005D2502201E6DB000F2C0C7 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005D2501201E6DB000F2C0C7 /* Constants.swift */; };
+		005D2504201E708F00F2C0C7 /* IBInspectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005D2503201E708F00F2C0C7 /* IBInspectable.swift */; };
+		00E3A9BB201E837B00162297 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E3A9BA201E837B00162297 /* UIColorExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +52,11 @@
 		005D24E9201E635500F2C0C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		005D24EB201E635500F2C0C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		005D24EE201E67E200F2C0C7 /* achievements.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = achievements.json; sourceTree = "<group>"; };
+		005D24FD201E6A3C00F2C0C7 /* AchievementsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsViewController.swift; sourceTree = "<group>"; };
+		005D24FF201E6AD900F2C0C7 /* AchievementLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementLoadable.swift; sourceTree = "<group>"; };
+		005D2501201E6DB000F2C0C7 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		005D2503201E708F00F2C0C7 /* IBInspectable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IBInspectable.swift; sourceTree = "<group>"; };
+		00E3A9BA201E837B00162297 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,7 +147,7 @@
 		005D24DB201E62C500F2C0C7 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				005D24F0201E688600F2C0C7 /* List */,
+				005D24F0201E688600F2C0C7 /* Achievements */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -149,20 +158,21 @@
 				005D24E3201E634500F2C0C7 /* Assets.xcassets */,
 				005D24E8201E635500F2C0C7 /* LaunchScreen.storyboard */,
 				005D24EA201E635500F2C0C7 /* Main.storyboard */,
+				005D2501201E6DB000F2C0C7 /* Constants.swift */,
 				005D24E2201E634500F2C0C7 /* Info.plist */,
 				005D24EE201E67E200F2C0C7 /* achievements.json */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		005D24F0201E688600F2C0C7 /* List */ = {
+		005D24F0201E688600F2C0C7 /* Achievements */ = {
 			isa = PBXGroup;
 			children = (
 				005D24F1201E68A500F2C0C7 /* Application Logic */,
 				005D24F2201E68AB00F2C0C7 /* Module Interface */,
 				005D24F3201E68BA00F2C0C7 /* User Interface */,
 			);
-			path = List;
+			path = Achievements;
 			sourceTree = "<group>";
 		};
 		005D24F1201E68A500F2C0C7 /* Application Logic */ = {
@@ -215,6 +225,8 @@
 		005D24F7201E690D00F2C0C7 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				005D24FF201E6AD900F2C0C7 /* AchievementLoadable.swift */,
+				005D24FD201E6A3C00F2C0C7 /* AchievementsViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -229,6 +241,8 @@
 		005D24F9201E692700F2C0C7 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				005D2503201E708F00F2C0C7 /* IBInspectable.swift */,
+				00E3A9BA201E837B00162297 /* UIColorExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -363,7 +377,6 @@
 			files = (
 				005D24ED201E635500F2C0C7 /* Main.storyboard in Resources */,
 				005D24EF201E67E200F2C0C7 /* achievements.json in Resources */,
-				005D24E6201E634500F2C0C7 /* Info.plist in Resources */,
 				005D24E7201E634500F2C0C7 /* Assets.xcassets in Resources */,
 				005D24EC201E635500F2C0C7 /* LaunchScreen.storyboard in Resources */,
 			);
@@ -390,7 +403,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				005D24FE201E6A3C00F2C0C7 /* AchievementsViewController.swift in Sources */,
+				005D2504201E708F00F2C0C7 /* IBInspectable.swift in Sources */,
 				005D24AD201E627300F2C0C7 /* AppDelegate.swift in Sources */,
+				005D2500201E6AD900F2C0C7 /* AchievementLoadable.swift in Sources */,
+				005D2502201E6DB000F2C0C7 /* Constants.swift in Sources */,
+				00E3A9BB201E837B00162297 /* UIColorExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
