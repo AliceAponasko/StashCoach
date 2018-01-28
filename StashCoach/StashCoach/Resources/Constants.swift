@@ -8,6 +8,13 @@
 
 import UIKit
 
+struct Const {
+
+    struct Achievement {
+        static let pointsText = "pts"
+    }
+}
+
 struct Resources {
 
     // MARK: B

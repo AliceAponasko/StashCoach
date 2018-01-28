@@ -19,6 +19,14 @@
 		005D2502201E6DB000F2C0C7 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005D2501201E6DB000F2C0C7 /* Constants.swift */; };
 		005D2504201E708F00F2C0C7 /* IBInspectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005D2503201E708F00F2C0C7 /* IBInspectable.swift */; };
 		00E3A9BB201E837B00162297 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E3A9BA201E837B00162297 /* UIColorExtension.swift */; };
+		00E3A9BD201E895400162297 /* AchievementsInteractorIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E3A9BC201E895400162297 /* AchievementsInteractorIO.swift */; };
+		00E3A9BF201E89AE00162297 /* Achievement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E3A9BE201E89AE00162297 /* Achievement.swift */; };
+		00E3A9C1201E8B3C00162297 /* AchievementsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E3A9C0201E8B3C00162297 /* AchievementsInteractor.swift */; };
+		00E3A9C3201E8BA400162297 /* AchievementsDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E3A9C2201E8BA400162297 /* AchievementsDataManager.swift */; };
+		00E3A9C5201E8C5700162297 /* CacheStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E3A9C4201E8C5700162297 /* CacheStore.swift */; };
+		00E3A9C7201E91A400162297 /* AchievementUpdatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E3A9C6201E91A400162297 /* AchievementUpdatable.swift */; };
+		00E3A9C9201E933C00162297 /* AchievementCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E3A9C8201E933C00162297 /* AchievementCell.swift */; };
+		00E3A9CB201E976300162297 /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E3A9CA201E976300162297 /* UIImageExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +65,14 @@
 		005D2501201E6DB000F2C0C7 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		005D2503201E708F00F2C0C7 /* IBInspectable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IBInspectable.swift; sourceTree = "<group>"; };
 		00E3A9BA201E837B00162297 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		00E3A9BC201E895400162297 /* AchievementsInteractorIO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsInteractorIO.swift; sourceTree = "<group>"; };
+		00E3A9BE201E89AE00162297 /* Achievement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Achievement.swift; sourceTree = "<group>"; };
+		00E3A9C0201E8B3C00162297 /* AchievementsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsInteractor.swift; sourceTree = "<group>"; };
+		00E3A9C2201E8BA400162297 /* AchievementsDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsDataManager.swift; sourceTree = "<group>"; };
+		00E3A9C4201E8C5700162297 /* CacheStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheStore.swift; sourceTree = "<group>"; };
+		00E3A9C6201E91A400162297 /* AchievementUpdatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementUpdatable.swift; sourceTree = "<group>"; };
+		00E3A9C8201E933C00162297 /* AchievementCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementCell.swift; sourceTree = "<group>"; };
+		00E3A9CA201E976300162297 /* UIImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -187,6 +203,7 @@
 		005D24F2201E68AB00F2C0C7 /* Module Interface */ = {
 			isa = PBXGroup;
 			children = (
+				00E3A9C6201E91A400162297 /* AchievementUpdatable.swift */,
 			);
 			path = "Module Interface";
 			sourceTree = "<group>";
@@ -204,6 +221,8 @@
 		005D24F4201E68C900F2C0C7 /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
+				00E3A9BC201E895400162297 /* AchievementsInteractorIO.swift */,
+				00E3A9C0201E8B3C00162297 /* AchievementsInteractor.swift */,
 			);
 			path = Interactor;
 			sourceTree = "<group>";
@@ -211,6 +230,7 @@
 		005D24F5201E68F300F2C0C7 /* Manager */ = {
 			isa = PBXGroup;
 			children = (
+				00E3A9C2201E8BA400162297 /* AchievementsDataManager.swift */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -225,6 +245,7 @@
 		005D24F7201E690D00F2C0C7 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				00E3A9C8201E933C00162297 /* AchievementCell.swift */,
 				005D24FF201E6AD900F2C0C7 /* AchievementLoadable.swift */,
 				005D24FD201E6A3C00F2C0C7 /* AchievementsViewController.swift */,
 			);
@@ -243,6 +264,7 @@
 			children = (
 				005D2503201E708F00F2C0C7 /* IBInspectable.swift */,
 				00E3A9BA201E837B00162297 /* UIColorExtension.swift */,
+				00E3A9CA201E976300162297 /* UIImageExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -250,6 +272,7 @@
 		005D24FA201E693900F2C0C7 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				00E3A9BE201E89AE00162297 /* Achievement.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -264,6 +287,7 @@
 		005D24FC201E695000F2C0C7 /* Cache */ = {
 			isa = PBXGroup;
 			children = (
+				00E3A9C4201E8C5700162297 /* CacheStore.swift */,
 			);
 			path = Cache;
 			sourceTree = "<group>";
@@ -405,10 +429,18 @@
 			files = (
 				005D24FE201E6A3C00F2C0C7 /* AchievementsViewController.swift in Sources */,
 				005D2504201E708F00F2C0C7 /* IBInspectable.swift in Sources */,
+				00E3A9C1201E8B3C00162297 /* AchievementsInteractor.swift in Sources */,
 				005D24AD201E627300F2C0C7 /* AppDelegate.swift in Sources */,
 				005D2500201E6AD900F2C0C7 /* AchievementLoadable.swift in Sources */,
 				005D2502201E6DB000F2C0C7 /* Constants.swift in Sources */,
+				00E3A9BF201E89AE00162297 /* Achievement.swift in Sources */,
+				00E3A9BD201E895400162297 /* AchievementsInteractorIO.swift in Sources */,
+				00E3A9C7201E91A400162297 /* AchievementUpdatable.swift in Sources */,
+				00E3A9CB201E976300162297 /* UIImageExtension.swift in Sources */,
 				00E3A9BB201E837B00162297 /* UIColorExtension.swift in Sources */,
+				00E3A9C5201E8C5700162297 /* CacheStore.swift in Sources */,
+				00E3A9C9201E933C00162297 /* AchievementCell.swift in Sources */,
+				00E3A9C3201E8BA400162297 /* AchievementsDataManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

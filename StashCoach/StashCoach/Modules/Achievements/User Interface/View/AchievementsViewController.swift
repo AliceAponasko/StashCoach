@@ -10,11 +10,23 @@ import UIKit
 
 class AchievementsViewController: UIViewController {
 
+    // MARK: Delegate
+
+    weak var eventHandler: AchievementUpdatable?
+
     // MARK: Outlets
 
     @IBOutlet weak var contentView: UIView!
     @IBOutlet var noContentView: UIView!
     @IBOutlet var achievementsTableView: UITableView!
+
+    // MARK: Constants
+
+    static let viewControllerId = "AchievementsViewController"
+
+    // MARK: Properties
+
+    var achievements: [Achievement]!
 
     // MARK: Lifecycle
 
@@ -24,10 +36,26 @@ class AchievementsViewController: UIViewController {
         contentView.bringSubview(toFront: noContentView)
     }
 
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+
+        eventHandler?.updateView()
+    }
+
     // MARK: Appearance
 
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
+    }
+
+    // MARK: Actions
+
+    @IBAction func didTapBackButton(_ sender: Any) {
+        // TODO:
+    }
+
+    @IBAction func didTapInfoButton(_ sender: Any) {
+        // TODO:
     }
 }
 
@@ -37,6 +65,7 @@ extension AchievementsViewController: AchievementLoadable {
 
     func showAchievements() {
         contentView.bringSubview(toFront: achievementsTableView)
+        reloadAchievements()
     }
 
     func showNoContentMessage() {
@@ -44,6 +73,55 @@ extension AchievementsViewController: AchievementLoadable {
     }
 
     func reloadAchievements() {
+        achievementsTableView.reloadData()
+    }
+}
 
+// MARK: - UITableViewDelegate
+
+extension AchievementsViewController: UITableViewDelegate {
+
+    func tableView(
+        _ tableView: UITableView,
+        heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 250.0
+    }
+
+    func tableView(
+        _ tableView: UITableView,
+        didSelectRowAt indexPath: IndexPath) {
+        // TODO:
+    }
+}
+
+// MARK: - UITableViewDataSource
+
+extension AchievementsViewController: UITableViewDataSource {
+
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+
+    func tableView(
+        _ tableView: UITableView,
+        numberOfRowsInSection section: Int) -> Int {
+        return achievements.count
+    }
+
+    func tableView(
+        _ tableView: UITableView,
+        cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+
+        guard let cell = tableView.dequeueReusableCell(
+            withIdentifier: AchievementCell.cellId,
+            for: indexPath) as? AchievementCell else {
+                return UITableViewCell()
+        }
+
+        let achievement = achievements[indexPath.row]
+
+        cell.achievement = achievement
+
+        return cell
     }
 }

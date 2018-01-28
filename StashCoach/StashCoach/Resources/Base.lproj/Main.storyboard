@@ -56,6 +56,9 @@
                                             <constraint firstAttribute="height" constant="44" id="tg0-ft-LjP"/>
                                         </constraints>
                                         <state key="normal" image="BackIcon"/>
+                                        <connections>
+                                            <action selector="didTapBackButton:" destination="KLQ-MY-nhc" eventType="touchUpInside" id="fXt-Ah-v3l"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q50-RH-VFY" userLabel="Info Button">
                                         <rect key="frame" x="326" y="15" width="44" height="44"/>
@@ -65,6 +68,9 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <state key="normal" image="InfoIcon"/>
+                                        <connections>
+                                            <action selector="didTapInfoButton:" destination="KLQ-MY-nhc" eventType="touchUpInside" id="fDy-cU-h8o"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.3294117647" green="0.098039215690000001" blue="0.76470588240000004" alpha="1" colorSpace="calibratedRGB"/>
@@ -103,58 +109,75 @@
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <viewLayoutGuide key="safeArea" id="8eW-zX-UEd"/>
                                         <prototypes>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="AchievementsCell" rowHeight="250" id="ju9-5c-XQj">
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="AchievementCell" rowHeight="250" id="ju9-5c-XQj" customClass="AchievementCell" customModule="StashCoach" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="28" width="375" height="250"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ju9-5c-XQj" id="LXB-r7-oQd">
                                                     <rect key="frame" x="0.0" y="0.0" width="375" height="249.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5KZ-Iw-Bkc" userLabel="Backgoround Image">
-                                                            <rect key="frame" x="16" y="11" width="338" height="228"/>
-                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5KZ-Iw-Bkc" userLabel="Backgoround Image">
+                                                            <rect key="frame" x="16" y="11" width="343" height="228"/>
                                                             <userDefinedRuntimeAttributes>
                                                                 <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                                     <real key="value" value="5"/>
                                                                 </userDefinedRuntimeAttribute>
                                                             </userDefinedRuntimeAttributes>
                                                         </imageView>
-                                                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="A1A-ai-9FP" userLabel="Level Circle">
-                                                            <rect key="frame" x="135" y="39" width="100" height="100"/>
-                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A1A-ai-9FP" userLabel="Level Circle">
+                                                            <rect key="frame" x="137.5" y="39" width="100" height="100"/>
                                                             <subviews>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Level" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4g2-Yh-47r" userLabel="Level Title">
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Level" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4g2-Yh-47r" userLabel="Level Title">
                                                                     <rect key="frame" x="30" y="22" width="40" height="21"/>
-                                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="40" id="AHO-HV-03J"/>
+                                                                        <constraint firstAttribute="height" constant="21" id="qjg-3z-qE1"/>
+                                                                    </constraints>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mfb-PL-l9d" userLabel="Level">
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mfb-PL-l9d" userLabel="Level">
                                                                     <rect key="frame" x="8" y="39" width="84" height="40"/>
-                                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="40" id="NDp-QF-zRa"/>
+                                                                        <constraint firstAttribute="width" constant="84" id="Waf-3L-yXV"/>
+                                                                    </constraints>
                                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                             </subviews>
                                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="100" id="3GO-KP-ygt"/>
+                                                                <constraint firstAttribute="height" constant="100" id="467-CM-8Zl"/>
+                                                                <constraint firstItem="mfb-PL-l9d" firstAttribute="centerX" secondItem="A1A-ai-9FP" secondAttribute="centerX" id="BsC-yV-Kzh"/>
+                                                                <constraint firstItem="mfb-PL-l9d" firstAttribute="top" secondItem="A1A-ai-9FP" secondAttribute="top" constant="39" id="QEs-mI-ojL"/>
+                                                                <constraint firstItem="4g2-Yh-47r" firstAttribute="centerX" secondItem="A1A-ai-9FP" secondAttribute="centerX" id="cP4-zj-bTV"/>
+                                                                <constraint firstItem="4g2-Yh-47r" firstAttribute="top" secondItem="A1A-ai-9FP" secondAttribute="top" constant="22" id="h9Y-c4-rke"/>
+                                                            </constraints>
                                                             <userDefinedRuntimeAttributes>
                                                                 <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                                     <real key="value" value="50"/>
                                                                 </userDefinedRuntimeAttribute>
                                                             </userDefinedRuntimeAttributes>
                                                         </view>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="10pts" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cGU-Cm-pBI" userLabel="Current Points">
-                                                            <rect key="frame" x="32" y="202" width="42" height="21"/>
-                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10pts" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cGU-Cm-pBI" userLabel="Current Points">
+                                                            <rect key="frame" x="32" y="202" width="100" height="21"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="21" id="N3L-m7-iaw"/>
+                                                                <constraint firstAttribute="width" constant="100" id="UKF-mA-X0d"/>
+                                                            </constraints>
                                                             <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
                                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="xkj-qh-lt9" userLabel="Points Progress">
-                                                            <rect key="frame" x="32" y="192" width="306" height="2"/>
-                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="xkj-qh-lt9" userLabel="Points Progress">
+                                                            <rect key="frame" x="32" y="192" width="311" height="2"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="2" id="34i-3U-hwP"/>
+                                                            </constraints>
                                                             <color key="progressTintColor" red="0.38039215686274508" green="0.76470588235294112" blue="0.28627450980392155" alpha="1" colorSpace="calibratedRGB"/>
                                                             <color key="trackTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <userDefinedRuntimeAttributes>
@@ -163,15 +186,40 @@
                                                                 </userDefinedRuntimeAttribute>
                                                             </userDefinedRuntimeAttributes>
                                                         </progressView>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="50pts" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DuH-uJ-jPz" userLabel="Max Points">
-                                                            <rect key="frame" x="293" y="202" width="45" height="21"/>
-                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="50pts" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DuH-uJ-jPz" userLabel="Max Points">
+                                                            <rect key="frame" x="243" y="202" width="100" height="21"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="100" id="FLb-q6-TRX"/>
+                                                                <constraint firstAttribute="height" constant="21" id="KU3-LX-uxE"/>
+                                                            </constraints>
                                                             <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
                                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                     </subviews>
+                                                    <constraints>
+                                                        <constraint firstItem="A1A-ai-9FP" firstAttribute="centerX" secondItem="LXB-r7-oQd" secondAttribute="centerX" id="1eZ-xk-H5T"/>
+                                                        <constraint firstItem="5KZ-Iw-Bkc" firstAttribute="centerX" secondItem="LXB-r7-oQd" secondAttribute="centerX" id="2VG-2e-DKo"/>
+                                                        <constraint firstItem="cGU-Cm-pBI" firstAttribute="leading" secondItem="LXB-r7-oQd" secondAttribute="leadingMargin" constant="17" id="5vT-7W-Hd5"/>
+                                                        <constraint firstItem="cGU-Cm-pBI" firstAttribute="top" secondItem="xkj-qh-lt9" secondAttribute="bottom" constant="8" id="Jen-kC-vYs"/>
+                                                        <constraint firstItem="5KZ-Iw-Bkc" firstAttribute="centerY" secondItem="LXB-r7-oQd" secondAttribute="centerY" id="PiW-XZ-aiO"/>
+                                                        <constraint firstAttribute="bottomMargin" secondItem="cGU-Cm-pBI" secondAttribute="bottom" constant="16" id="UDV-6e-EvW"/>
+                                                        <constraint firstItem="5KZ-Iw-Bkc" firstAttribute="leading" secondItem="LXB-r7-oQd" secondAttribute="leadingMargin" constant="1" id="Y4u-oh-m7d"/>
+                                                        <constraint firstItem="5KZ-Iw-Bkc" firstAttribute="top" secondItem="LXB-r7-oQd" secondAttribute="topMargin" id="ZCG-nD-qCa"/>
+                                                        <constraint firstItem="A1A-ai-9FP" firstAttribute="top" secondItem="LXB-r7-oQd" secondAttribute="topMargin" constant="28" id="c99-OT-h7H"/>
+                                                        <constraint firstItem="xkj-qh-lt9" firstAttribute="leading" secondItem="LXB-r7-oQd" secondAttribute="leadingMargin" constant="17" id="fzv-pP-eWm"/>
+                                                        <constraint firstItem="xkj-qh-lt9" firstAttribute="centerX" secondItem="LXB-r7-oQd" secondAttribute="centerX" id="mZD-nD-Jcb"/>
+                                                        <constraint firstAttribute="trailingMargin" secondItem="DuH-uJ-jPz" secondAttribute="trailing" constant="17" id="ph9-xm-p1s"/>
+                                                        <constraint firstAttribute="bottomMargin" secondItem="DuH-uJ-jPz" secondAttribute="bottom" constant="16" id="vym-jY-Nmo"/>
+                                                    </constraints>
                                                 </tableViewCellContentView>
+                                                <connections>
+                                                    <outlet property="backgroundImage" destination="5KZ-Iw-Bkc" id="f0l-Wb-Ec9"/>
+                                                    <outlet property="currentPointsLabel" destination="cGU-Cm-pBI" id="TnQ-RO-mau"/>
+                                                    <outlet property="levelLabel" destination="mfb-PL-l9d" id="xBu-Ah-q6I"/>
+                                                    <outlet property="maxPointsLabel" destination="DuH-uJ-jPz" id="7bO-nj-jUC"/>
+                                                    <outlet property="progressBar" destination="xkj-qh-lt9" id="LFc-IH-e9P"/>
+                                                </connections>
                                             </tableViewCell>
                                         </prototypes>
                                     </tableView>
