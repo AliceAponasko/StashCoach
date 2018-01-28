@@ -14,6 +14,7 @@
 		005D24E7201E634500F2C0C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 005D24E3201E634500F2C0C7 /* Assets.xcassets */; };
 		005D24EC201E635500F2C0C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 005D24E8201E635500F2C0C7 /* LaunchScreen.storyboard */; };
 		005D24ED201E635500F2C0C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 005D24EA201E635500F2C0C7 /* Main.storyboard */; };
+		005D24EF201E67E200F2C0C7 /* achievements.json in Resources */ = {isa = PBXBuildFile; fileRef = 005D24EE201E67E200F2C0C7 /* achievements.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		005D24E3201E634500F2C0C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		005D24E9201E635500F2C0C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		005D24EB201E635500F2C0C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		005D24EE201E67E200F2C0C7 /* achievements.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = achievements.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +127,10 @@
 		005D24DA201E62BD00F2C0C7 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				005D24F9201E692700F2C0C7 /* Extensions */,
+				005D24FA201E693900F2C0C7 /* Model */,
+				005D24FC201E695000F2C0C7 /* Cache */,
+				005D24FB201E694400F2C0C7 /* View */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -132,6 +138,7 @@
 		005D24DB201E62C500F2C0C7 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				005D24F0201E688600F2C0C7 /* List */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -143,8 +150,108 @@
 				005D24E8201E635500F2C0C7 /* LaunchScreen.storyboard */,
 				005D24EA201E635500F2C0C7 /* Main.storyboard */,
 				005D24E2201E634500F2C0C7 /* Info.plist */,
+				005D24EE201E67E200F2C0C7 /* achievements.json */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		005D24F0201E688600F2C0C7 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				005D24F1201E68A500F2C0C7 /* Application Logic */,
+				005D24F2201E68AB00F2C0C7 /* Module Interface */,
+				005D24F3201E68BA00F2C0C7 /* User Interface */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		005D24F1201E68A500F2C0C7 /* Application Logic */ = {
+			isa = PBXGroup;
+			children = (
+				005D24F4201E68C900F2C0C7 /* Interactor */,
+				005D24F5201E68F300F2C0C7 /* Manager */,
+			);
+			path = "Application Logic";
+			sourceTree = "<group>";
+		};
+		005D24F2201E68AB00F2C0C7 /* Module Interface */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Module Interface";
+			sourceTree = "<group>";
+		};
+		005D24F3201E68BA00F2C0C7 /* User Interface */ = {
+			isa = PBXGroup;
+			children = (
+				005D24F8201E691200F2C0C7 /* Presenter */,
+				005D24F7201E690D00F2C0C7 /* View */,
+				005D24F6201E690600F2C0C7 /* Wireframe */,
+			);
+			path = "User Interface";
+			sourceTree = "<group>";
+		};
+		005D24F4201E68C900F2C0C7 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		005D24F5201E68F300F2C0C7 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		005D24F6201E690600F2C0C7 /* Wireframe */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Wireframe;
+			sourceTree = "<group>";
+		};
+		005D24F7201E690D00F2C0C7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		005D24F8201E691200F2C0C7 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		005D24F9201E692700F2C0C7 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		005D24FA201E693900F2C0C7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		005D24FB201E694400F2C0C7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		005D24FC201E695000F2C0C7 /* Cache */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cache;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -255,6 +362,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				005D24ED201E635500F2C0C7 /* Main.storyboard in Resources */,
+				005D24EF201E67E200F2C0C7 /* achievements.json in Resources */,
 				005D24E6201E634500F2C0C7 /* Info.plist in Resources */,
 				005D24E7201E634500F2C0C7 /* Assets.xcassets in Resources */,
 				005D24EC201E635500F2C0C7 /* LaunchScreen.storyboard in Resources */,
