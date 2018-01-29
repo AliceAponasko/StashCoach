@@ -1,5 +1,5 @@
 //
-//  AchievementInteractor.swift
+//  AchievementsInteractor.swift
 //  StashCoach
 //
 //  Created by Alice Aponasko on 1/28/18.

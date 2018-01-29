@@ -11,6 +11,6 @@ import Foundation
 protocol AchievementLoadable: class {
 
     func showNoContentMessage()
-    func showAchievements()
+    func showAchievements(_ achievements: [Achievement])
     func reloadAchievements()
 }

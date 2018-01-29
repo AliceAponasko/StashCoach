@@ -10,9 +10,9 @@ import Foundation
 
 class AchievementsDataManager {
 
-    let cache = CacheStore()
+    var cache: CacheStore?
 
     func achievements() -> [Achievement]? {
-        return cache.achievements()
+        return cache?.achievements()
     }
 }

@@ -30,22 +30,10 @@ class AchievementsViewController: UIViewController {
 
     // MARK: Lifecycle
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        contentView.bringSubview(toFront: noContentView)
-    }
-
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
 
         eventHandler?.updateView()
-    }
-
-    // MARK: Appearance
-
-    override var preferredStatusBarStyle: UIStatusBarStyle {
-        return .lightContent
     }
 
     // MARK: Actions
@@ -63,13 +51,14 @@ class AchievementsViewController: UIViewController {
 
 extension AchievementsViewController: AchievementLoadable {
 
-    func showAchievements() {
-        contentView.bringSubview(toFront: achievementsTableView)
+    func showAchievements(_ achievements: [Achievement]) {
+        self.achievements = achievements
+        view = achievementsTableView
         reloadAchievements()
     }
 
     func showNoContentMessage() {
-        contentView.bringSubview(toFront: noContentView)
+        view = noContentView
     }
 
     func reloadAchievements() {

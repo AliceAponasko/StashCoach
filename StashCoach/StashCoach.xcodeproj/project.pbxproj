@@ -27,6 +27,10 @@
 		00E3A9C7201E91A400162297 /* AchievementUpdatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E3A9C6201E91A400162297 /* AchievementUpdatable.swift */; };
 		00E3A9C9201E933C00162297 /* AchievementCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E3A9C8201E933C00162297 /* AchievementCell.swift */; };
 		00E3A9CB201E976300162297 /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E3A9CA201E976300162297 /* UIImageExtension.swift */; };
+		00E3A9CD201E99D700162297 /* AchievementsWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E3A9CC201E99D700162297 /* AchievementsWireframe.swift */; };
+		00E3A9CF201E9A1700162297 /* RootWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E3A9CE201E9A1700162297 /* RootWireframe.swift */; };
+		00E3A9D1201E9B6E00162297 /* AchievementsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E3A9D0201E9B6E00162297 /* AchievementsPresenter.swift */; };
+		00E3A9D3201EA0C000162297 /* AppDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E3A9D2201EA0C000162297 /* AppDependencies.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +77,10 @@
 		00E3A9C6201E91A400162297 /* AchievementUpdatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementUpdatable.swift; sourceTree = "<group>"; };
 		00E3A9C8201E933C00162297 /* AchievementCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementCell.swift; sourceTree = "<group>"; };
 		00E3A9CA201E976300162297 /* UIImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
+		00E3A9CC201E99D700162297 /* AchievementsWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsWireframe.swift; sourceTree = "<group>"; };
+		00E3A9CE201E9A1700162297 /* RootWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootWireframe.swift; sourceTree = "<group>"; };
+		00E3A9D0201E9B6E00162297 /* AchievementsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsPresenter.swift; sourceTree = "<group>"; };
+		00E3A9D2201EA0C000162297 /* AppDependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDependencies.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +135,7 @@
 				005D24DB201E62C500F2C0C7 /* Modules */,
 				005D24DC201E631100F2C0C7 /* Resources */,
 				005D24AC201E627300F2C0C7 /* AppDelegate.swift */,
+				00E3A9D2201EA0C000162297 /* AppDependencies.swift */,
 			);
 			path = StashCoach;
 			sourceTree = "<group>";
@@ -238,6 +247,7 @@
 		005D24F6201E690600F2C0C7 /* Wireframe */ = {
 			isa = PBXGroup;
 			children = (
+				00E3A9CC201E99D700162297 /* AchievementsWireframe.swift */,
 			);
 			path = Wireframe;
 			sourceTree = "<group>";
@@ -255,6 +265,7 @@
 		005D24F8201E691200F2C0C7 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
+				00E3A9D0201E9B6E00162297 /* AchievementsPresenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -280,6 +291,7 @@
 		005D24FB201E694400F2C0C7 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				00E3A9CE201E9A1700162297 /* RootWireframe.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -430,8 +442,12 @@
 				005D24FE201E6A3C00F2C0C7 /* AchievementsViewController.swift in Sources */,
 				005D2504201E708F00F2C0C7 /* IBInspectable.swift in Sources */,
 				00E3A9C1201E8B3C00162297 /* AchievementsInteractor.swift in Sources */,
+				00E3A9CD201E99D700162297 /* AchievementsWireframe.swift in Sources */,
+				00E3A9CF201E9A1700162297 /* RootWireframe.swift in Sources */,
 				005D24AD201E627300F2C0C7 /* AppDelegate.swift in Sources */,
+				00E3A9D3201EA0C000162297 /* AppDependencies.swift in Sources */,
 				005D2500201E6AD900F2C0C7 /* AchievementLoadable.swift in Sources */,
+				00E3A9D1201E9B6E00162297 /* AchievementsPresenter.swift in Sources */,
 				005D2502201E6DB000F2C0C7 /* Constants.swift in Sources */,
 				00E3A9BF201E89AE00162297 /* Achievement.swift in Sources */,
 				00E3A9BD201E895400162297 /* AchievementsInteractorIO.swift in Sources */,
