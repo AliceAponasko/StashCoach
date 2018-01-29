@@ -13,6 +13,7 @@ class AchievementCell: UITableViewCell {
     // MARK: Constants
 
     static let cellId = "AchievementCell"
+    static let cellHeight: CGFloat = 240.0
 
     // MARK: Outlets
 
@@ -31,7 +32,7 @@ class AchievementCell: UITableViewCell {
             }
 
             backgroundImage.downloadImage(from: achievement.imageUrl)
-            levelLabel.text = achievement.level
+            levelLabel.text = "\(achievement.level)"
             currentPointsLabel.text = "\(achievement.progress)\(Const.Achievement.pointsText)"
             maxPointsLabel.text = "\(achievement.total)\(Const.Achievement.pointsText)"
             progressBar.setProgress(

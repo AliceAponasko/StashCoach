@@ -73,12 +73,14 @@ extension AchievementsViewController: UITableViewDelegate {
     func tableView(
         _ tableView: UITableView,
         heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 250.0
+        return AchievementCell.cellHeight
     }
 
     func tableView(
         _ tableView: UITableView,
         didSelectRowAt indexPath: IndexPath) {
+
+        tableView.deselectRow(at: indexPath, animated: true)
         // TODO:
     }
 }

@@ -16,12 +16,14 @@ class AchievementsInteractor {
 
     // MARK: Properties
 
-    var dataManager: AchievementsDataManager!
+    var cacheDataManager: AchievementsCacheDataManager!
+    var remoteDataManager: AchievementsRemoteDataManager!
 
     // MARK: Init
 
-    init(dataManager: AchievementsDataManager) {
-        self.dataManager = dataManager
+    init(cache: AchievementsCacheDataManager, remote: AchievementsRemoteDataManager) {
+        self.cacheDataManager = cache
+        self.remoteDataManager = remote
     }
 }
 
@@ -30,8 +32,19 @@ class AchievementsInteractor {
 extension AchievementsInteractor: AchievementsInteractorInput {
 
     func findAchievements() {
-        guard let achievements = dataManager.achievements() else {
-            output?.foundAchievements([])
+        guard let achievements = cacheDataManager.achievements() else {
+            remoteDataManager.achievements { [weak self] achievements in
+                guard let strongSelf = self else {
+                    return
+                }
+
+                guard let achievements = achievements else {
+                    strongSelf.output?.foundAchievements([])
+                    return
+                }
+
+                strongSelf.output?.foundAchievements(achievements)
+            }
             return
         }
 

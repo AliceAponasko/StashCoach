@@ -22,7 +22,7 @@
 		00E3A9BD201E895400162297 /* AchievementsInteractorIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E3A9BC201E895400162297 /* AchievementsInteractorIO.swift */; };
 		00E3A9BF201E89AE00162297 /* Achievement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E3A9BE201E89AE00162297 /* Achievement.swift */; };
 		00E3A9C1201E8B3C00162297 /* AchievementsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E3A9C0201E8B3C00162297 /* AchievementsInteractor.swift */; };
-		00E3A9C3201E8BA400162297 /* AchievementsDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E3A9C2201E8BA400162297 /* AchievementsDataManager.swift */; };
+		00E3A9C3201E8BA400162297 /* AchievementsCacheDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E3A9C2201E8BA400162297 /* AchievementsCacheDataManager.swift */; };
 		00E3A9C5201E8C5700162297 /* CacheStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E3A9C4201E8C5700162297 /* CacheStore.swift */; };
 		00E3A9C7201E91A400162297 /* AchievementUpdatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E3A9C6201E91A400162297 /* AchievementUpdatable.swift */; };
 		00E3A9C9201E933C00162297 /* AchievementCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E3A9C8201E933C00162297 /* AchievementCell.swift */; };
@@ -31,6 +31,8 @@
 		00E3A9CF201E9A1700162297 /* RootWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E3A9CE201E9A1700162297 /* RootWireframe.swift */; };
 		00E3A9D1201E9B6E00162297 /* AchievementsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E3A9D0201E9B6E00162297 /* AchievementsPresenter.swift */; };
 		00E3A9D3201EA0C000162297 /* AppDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E3A9D2201EA0C000162297 /* AppDependencies.swift */; };
+		00E3A9D5201EAAD200162297 /* AchievementsRemoteDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E3A9D4201EAAD200162297 /* AchievementsRemoteDataManager.swift */; };
+		00E3A9D7201EB22100162297 /* ServerResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E3A9D6201EB22100162297 /* ServerResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,7 +74,7 @@
 		00E3A9BC201E895400162297 /* AchievementsInteractorIO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsInteractorIO.swift; sourceTree = "<group>"; };
 		00E3A9BE201E89AE00162297 /* Achievement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Achievement.swift; sourceTree = "<group>"; };
 		00E3A9C0201E8B3C00162297 /* AchievementsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsInteractor.swift; sourceTree = "<group>"; };
-		00E3A9C2201E8BA400162297 /* AchievementsDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsDataManager.swift; sourceTree = "<group>"; };
+		00E3A9C2201E8BA400162297 /* AchievementsCacheDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsCacheDataManager.swift; sourceTree = "<group>"; };
 		00E3A9C4201E8C5700162297 /* CacheStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheStore.swift; sourceTree = "<group>"; };
 		00E3A9C6201E91A400162297 /* AchievementUpdatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementUpdatable.swift; sourceTree = "<group>"; };
 		00E3A9C8201E933C00162297 /* AchievementCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementCell.swift; sourceTree = "<group>"; };
@@ -81,6 +83,8 @@
 		00E3A9CE201E9A1700162297 /* RootWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootWireframe.swift; sourceTree = "<group>"; };
 		00E3A9D0201E9B6E00162297 /* AchievementsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsPresenter.swift; sourceTree = "<group>"; };
 		00E3A9D2201EA0C000162297 /* AppDependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDependencies.swift; sourceTree = "<group>"; };
+		00E3A9D4201EAAD200162297 /* AchievementsRemoteDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsRemoteDataManager.swift; sourceTree = "<group>"; };
+		00E3A9D6201EB22100162297 /* ServerResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -239,7 +243,8 @@
 		005D24F5201E68F300F2C0C7 /* Manager */ = {
 			isa = PBXGroup;
 			children = (
-				00E3A9C2201E8BA400162297 /* AchievementsDataManager.swift */,
+				00E3A9C2201E8BA400162297 /* AchievementsCacheDataManager.swift */,
+				00E3A9D4201EAAD200162297 /* AchievementsRemoteDataManager.swift */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -284,6 +289,7 @@
 			isa = PBXGroup;
 			children = (
 				00E3A9BE201E89AE00162297 /* Achievement.swift */,
+				00E3A9D6201EB22100162297 /* ServerResponse.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -448,6 +454,8 @@
 				00E3A9D3201EA0C000162297 /* AppDependencies.swift in Sources */,
 				005D2500201E6AD900F2C0C7 /* AchievementLoadable.swift in Sources */,
 				00E3A9D1201E9B6E00162297 /* AchievementsPresenter.swift in Sources */,
+				00E3A9D7201EB22100162297 /* ServerResponse.swift in Sources */,
+				00E3A9D5201EAAD200162297 /* AchievementsRemoteDataManager.swift in Sources */,
 				005D2502201E6DB000F2C0C7 /* Constants.swift in Sources */,
 				00E3A9BF201E89AE00162297 /* Achievement.swift in Sources */,
 				00E3A9BD201E895400162297 /* AchievementsInteractorIO.swift in Sources */,
@@ -456,7 +464,7 @@
 				00E3A9BB201E837B00162297 /* UIColorExtension.swift in Sources */,
 				00E3A9C5201E8C5700162297 /* CacheStore.swift in Sources */,
 				00E3A9C9201E933C00162297 /* AchievementCell.swift in Sources */,
-				00E3A9C3201E8BA400162297 /* AchievementsDataManager.swift in Sources */,
+				00E3A9C3201E8BA400162297 /* AchievementsCacheDataManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

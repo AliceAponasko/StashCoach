@@ -28,9 +28,11 @@ class AppDependencies {
         // Achievements Module
         let achievementsWireframe = AchievementsWireframe()
         let achievementsPresenter = AchievementsPresenter()
-        let achievementsDataManager = AchievementsDataManager()
+        let achievementsCacheDataManager = AchievementsCacheDataManager()
+        let achievementsRemoteDataManager = AchievementsRemoteDataManager()
         let achievementsInteractor = AchievementsInteractor(
-            dataManager: achievementsDataManager)
+            cache: achievementsCacheDataManager,
+            remote: achievementsRemoteDataManager)
         
         achievementsInteractor.output = achievementsPresenter
         achievementsPresenter.achievementInteractor = achievementsInteractor
@@ -40,7 +42,8 @@ class AppDependencies {
 
         self.achievementsWireframe = achievementsWireframe
 
-        achievementsDataManager.cache = cache
+        achievementsCacheDataManager.cache = cache
+        achievementsRemoteDataManager.cache = cache
     }
 
     // MARK: Helpers

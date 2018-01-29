@@ -12,7 +12,7 @@ class AchievementsPresenter {
 
     // MARK: Delegate
 
-    weak var achievementInteractor: AchievementsInteractorInput?
+    var achievementInteractor: AchievementsInteractorInput?
     weak var userInterface: AchievementLoadable?
 }
 

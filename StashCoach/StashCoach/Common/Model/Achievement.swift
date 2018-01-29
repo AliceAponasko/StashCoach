@@ -8,11 +8,11 @@
 
 import Foundation
 
-class Achievement: Codable {
+struct Achievement: Codable {
 
     // MARK: Coder Key
 
-    enum CoderKey: String, CodingKey {
+    enum CodingKeys: String, CodingKey {
         case id
         case level
         case progress
@@ -28,25 +28,7 @@ class Achievement: Codable {
     var progress: Int
     var total: Int
     var imageUrl: String
-    var accessible: Bool
-
-    // MARK: Init
-
-    init(
-        id: Int,
-        level: String,
-        progress: Int,
-        total: Int,
-        imageUrl: String,
-        accessible: Bool) {
-
-        self.id = id
-        self.level = level
-        self.progress = progress
-        self.total = total
-        self.imageUrl = imageUrl
-        self.accessible = accessible
-    }
+    var accessible: Int
 
     // MARK: Helpers
 

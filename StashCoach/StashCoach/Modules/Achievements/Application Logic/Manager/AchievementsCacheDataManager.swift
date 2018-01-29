@@ -1,5 +1,5 @@
 //
-//  AchievementsDataManager.swift
+//  AchievementsCacheDataManager.swift
 //  StashCoach
 //
 //  Created by Alice Aponasko on 1/28/18.
@@ -8,9 +8,13 @@
 
 import Foundation
 
-class AchievementsDataManager {
+class AchievementsCacheDataManager {
+
+    // MARK: Properties
 
     var cache: CacheStore?
+
+    // MARK: Fetch
 
     func achievements() -> [Achievement]? {
         return cache?.achievements()
