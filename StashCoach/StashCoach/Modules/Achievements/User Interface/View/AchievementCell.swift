@@ -22,7 +22,8 @@ class AchievementCell: UITableViewCell {
     @IBOutlet weak var currentPointsLabel: UILabel!
     @IBOutlet weak var maxPointsLabel: UILabel!
     @IBOutlet weak var progressBar: UIProgressView!
-
+    @IBOutlet weak var inactiveOverlayView: UIView!
+    
     // MARK: Properties
 
     var achievement: Achievement? {
@@ -38,6 +39,9 @@ class AchievementCell: UITableViewCell {
             progressBar.setProgress(
                 Float(achievement.progress) / Float(achievement.total),
                 animated: true)
+
+            inactiveOverlayView.isHidden = achievement.accessible == 0 ? false : true
+            isUserInteractionEnabled = achievement.accessible == 0 ? false : true
         }
     }
 

@@ -21,4 +21,9 @@ struct Resources {
 
     private static let backIcon = "BackIcon"
     static let backImage = UIImage(named: Resources.backIcon)!
+
+    // MARK: I
+
+    private static let infoIcon = "InfoIcon"
+    static let infoImage = UIImage(named: Resources.infoIcon)!
 }

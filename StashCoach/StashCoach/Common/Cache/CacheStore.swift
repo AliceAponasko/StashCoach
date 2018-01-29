@@ -19,11 +19,11 @@ class CacheStore {
 
     func achievements() -> [Achievement]? {
 
-        guard let achs = cache.object(forKey: cacheId) else {
+        guard let achievements = cache.object(forKey: cacheId) else {
             return nil
         }
 
-        return Array(achs) as? [Achievement]
+        return Array(achievements) as? [Achievement]
     }
 
     func setAchievements(_ achievements: [Achievement]) {

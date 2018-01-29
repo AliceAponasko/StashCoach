@@ -21,6 +21,12 @@
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.3294117647" green="0.098039215690000001" blue="0.76470588240000004" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                 </navigationController>
@@ -65,7 +71,7 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </imageView>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A1A-ai-9FP" userLabel="Level Circle">
+                                    <view alpha="0.84999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A1A-ai-9FP" userLabel="Level Circle">
                                         <rect key="frame" x="137.5" y="39" width="100" height="100"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Level" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4g2-Yh-47r" userLabel="Level Title">
@@ -137,6 +143,11 @@
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <view alpha="0.5" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dAj-7m-jSt" userLabel="Inactive Overlay">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="240"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="A1A-ai-9FP" firstAttribute="centerX" secondItem="LXB-r7-oQd" secondAttribute="centerX" id="1eZ-xk-H5T"/>
@@ -157,6 +168,7 @@
                             <connections>
                                 <outlet property="backgroundImage" destination="5KZ-Iw-Bkc" id="f0l-Wb-Ec9"/>
                                 <outlet property="currentPointsLabel" destination="cGU-Cm-pBI" id="TnQ-RO-mau"/>
+                                <outlet property="inactiveOverlayView" destination="dAj-7m-jSt" id="Zsa-3M-Wqv"/>
                                 <outlet property="levelLabel" destination="mfb-PL-l9d" id="xBu-Ah-q6I"/>
                                 <outlet property="maxPointsLabel" destination="DuH-uJ-jPz" id="7bO-nj-jUC"/>
                                 <outlet property="progressBar" destination="xkj-qh-lt9" id="LFc-IH-e9P"/>

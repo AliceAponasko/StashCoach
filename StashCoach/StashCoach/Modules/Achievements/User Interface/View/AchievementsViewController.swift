@@ -26,6 +26,7 @@ class AchievementsViewController: UIViewController {
 
     // MARK: Properties
 
+    var overview = "Smart Investing"
     var achievements: [Achievement]!
 
     // MARK: Lifecycle
@@ -34,15 +35,40 @@ class AchievementsViewController: UIViewController {
         super.viewDidAppear(animated)
 
         eventHandler?.updateView()
+        customizeNavBar()
+    }
+
+    // MARK: Appearance
+
+    func customizeNavBar() {
+        navigationItem.title = overview
+
+        let backButton = UIBarButtonItem(
+            image: Resources.backImage,
+            style: .plain,
+            target: self,
+            action: #selector(didTapBackButton(_:)))
+        backButton.tintColor = .white
+
+        navigationItem.leftBarButtonItem = backButton
+
+        let infoButton = UIBarButtonItem(
+            image: Resources.infoImage,
+            style: .plain,
+            target: self,
+            action: #selector(didTapInfoButton(_:)))
+        infoButton.tintColor = .white
+
+        navigationItem.rightBarButtonItem = infoButton
     }
 
     // MARK: Actions
 
-    @IBAction func didTapBackButton(_ sender: Any) {
+    @objc func didTapBackButton(_ sender: Any) {
         // TODO:
     }
 
-    @IBAction func didTapInfoButton(_ sender: Any) {
+    @objc func didTapInfoButton(_ sender: Any) {
         // TODO:
     }
 }

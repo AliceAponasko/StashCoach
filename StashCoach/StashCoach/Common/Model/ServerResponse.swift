@@ -18,7 +18,7 @@ struct ServerResponse: Codable {
     var achievements: [Achievement]
 }
 
-class Overview: Codable {
+struct Overview: Codable {
 
     // MARK: Properties
 
