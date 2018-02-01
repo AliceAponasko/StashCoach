@@ -27,6 +27,9 @@ Achievements list screen using the VIPER architecture.
 
 - Add networking tests
 
+- Add edge case tests
+    - Right now testing is quite primitive and in general we just following the logic
+
 - Add proper server response parsing
     - Right now the app is assuming that it is always a success.
 
