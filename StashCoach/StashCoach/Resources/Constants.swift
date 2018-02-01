@@ -10,6 +10,10 @@ import UIKit
 
 struct Const {
 
+    struct General {
+        static let storyboardId = "Main"
+    }
+
     struct Achievement {
         static let pointsText = "pts"
     }

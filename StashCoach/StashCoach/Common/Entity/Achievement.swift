@@ -29,12 +29,6 @@ struct Achievement: Codable {
     var total: Int
     var imageUrl: String
     var accessible: Int
-
-    // MARK: Helpers
-
-    func imageCacheId() -> String {
-        return "achievement\(id)"
-    }
 }
 
 func == (lhs: Achievement, rhs: Achievement) -> Bool {

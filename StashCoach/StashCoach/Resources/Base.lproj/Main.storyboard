@@ -143,21 +143,24 @@
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <view alpha="0.5" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dAj-7m-jSt" userLabel="Inactive Overlay">
+                                    <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dAj-7m-jSt" userLabel="Inactive Overlay">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="240"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </view>
                                 </subviews>
                                 <constraints>
+                                    <constraint firstItem="dAj-7m-jSt" firstAttribute="top" secondItem="LXB-r7-oQd" secondAttribute="top" id="0N5-Y9-wh5"/>
                                     <constraint firstItem="A1A-ai-9FP" firstAttribute="centerX" secondItem="LXB-r7-oQd" secondAttribute="centerX" id="1eZ-xk-H5T"/>
+                                    <constraint firstAttribute="trailing" secondItem="dAj-7m-jSt" secondAttribute="trailing" id="2LE-8b-uPk"/>
                                     <constraint firstItem="5KZ-Iw-Bkc" firstAttribute="centerX" secondItem="LXB-r7-oQd" secondAttribute="centerX" id="2VG-2e-DKo"/>
                                     <constraint firstItem="cGU-Cm-pBI" firstAttribute="leading" secondItem="LXB-r7-oQd" secondAttribute="leadingMargin" constant="17" id="5vT-7W-Hd5"/>
                                     <constraint firstItem="cGU-Cm-pBI" firstAttribute="top" secondItem="xkj-qh-lt9" secondAttribute="bottom" constant="12" id="Jen-kC-vYs"/>
+                                    <constraint firstAttribute="bottom" secondItem="dAj-7m-jSt" secondAttribute="bottom" id="Snw-RD-Xhl"/>
                                     <constraint firstAttribute="bottomMargin" secondItem="cGU-Cm-pBI" secondAttribute="bottom" constant="25" id="UDV-6e-EvW"/>
                                     <constraint firstItem="5KZ-Iw-Bkc" firstAttribute="leading" secondItem="LXB-r7-oQd" secondAttribute="leadingMargin" constant="1" id="Y4u-oh-m7d"/>
                                     <constraint firstItem="5KZ-Iw-Bkc" firstAttribute="top" secondItem="LXB-r7-oQd" secondAttribute="topMargin" constant="10" id="ZCG-nD-qCa"/>
                                     <constraint firstItem="A1A-ai-9FP" firstAttribute="top" secondItem="LXB-r7-oQd" secondAttribute="topMargin" constant="28" id="c99-OT-h7H"/>
+                                    <constraint firstItem="dAj-7m-jSt" firstAttribute="leading" secondItem="LXB-r7-oQd" secondAttribute="leading" id="dWs-xn-m04"/>
                                     <constraint firstItem="xkj-qh-lt9" firstAttribute="leading" secondItem="LXB-r7-oQd" secondAttribute="leadingMargin" constant="17" id="fzv-pP-eWm"/>
                                     <constraint firstItem="xkj-qh-lt9" firstAttribute="centerX" secondItem="LXB-r7-oQd" secondAttribute="centerX" id="mZD-nD-Jcb"/>
                                     <constraint firstAttribute="trailingMargin" secondItem="DuH-uJ-jPz" secondAttribute="trailing" constant="17" id="ph9-xm-p1s"/>

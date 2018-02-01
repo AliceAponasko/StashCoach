@@ -30,4 +30,9 @@ class CacheStore {
 
         cache.setObject(achievements as NSArray, forKey: cacheId)
     }
+
+    func removeAll() {
+
+        cache.removeAllObjects()
+    }
 }

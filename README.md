@@ -1,11 +1,16 @@
 # Stash Coach
 
-Achievements list screen using the VIPER architecture
+Achievements list screen using the VIPER architecture.
+
+# Using
+
+- XCode 9.2 (9C40b)
+- Swift 4
 
 # Questions
 
 - Should I use Core Data?
-    - I don't think so, the nature of the data allows to use a simple cache, it looks like we need to fetch it as much as possible.
+    - I don't think so. The nature of the data allows to use a simple cache, it looks like we need to fetch it quite often. Also, with Swift 4 encode / decode is provided for us, so writing to NSCache / file is easy.
 
 - Should I use Pods?
     - Yes, if the project grows bugger and requires more detailed functionality.
@@ -15,11 +20,24 @@ Achievements list screen using the VIPER architecture
 
 # To Do
 
+- Parse VC title from provided JSON file
+
+- Add UI tests
+    - currently we have just one screen and buttons don't have any actions
+
+- Add networking tests
+
+- Add proper server response parsing
+    - Right now the app is assuming that it is always a success.
+
+- Add shadow view behind cell's image (if active)
+    - We will need to create another view behind the existing image view (or encapsulate image view into a custom view) because of rounded corners.
+
 - Cache library
-    - maybe we could upgrade to some pod in the future for more functionality (like `pod 'Cache', '~> 4.0'`) or simply write to file.
+    - Maybe we could upgrade to some pod in the future for more functionality (like `pod 'Cache', '~> 4.0'`) or simply write to file.
 
 - Define the font
-    - font files should be included in the project, then we will build an extension to use those instead of the default one.
+    - Font files should be included in the project, then we will build an extension to use those instead of the default one.
 
 - Add linter
     - Ususally I use SwiftLint.
@@ -39,8 +57,4 @@ Achievements list screen using the VIPER architecture
 - Add logger
     - I have used  `pod 'XCGLogger', '~> 6.0.1'` im my previous projects.
 
-- Add proper server response parsing
-    - Right now the app is assuming that it is always a success.
 
-- Add shadow view behind cell's image (if active)
-    - We will need to create another view behind the existing image view (or encapsulate image view into a custom view) because of rounded corners.

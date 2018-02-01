@@ -41,6 +41,6 @@ class AchievementsWireframe {
     }
 
     private func mainStoryboard() -> UIStoryboard? {
-        return UIStoryboard(name: "Main", bundle: Bundle.main)
+        return UIStoryboard(name: Const.General.storyboardId, bundle: Bundle.main)
     }
 }

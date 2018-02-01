@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		005D24AD201E627300F2C0C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005D24AC201E627300F2C0C7 /* AppDelegate.swift */; };
-		005D24C2201E627300F2C0C7 /* StashCoachTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005D24C1201E627300F2C0C7 /* StashCoachTests.swift */; };
-		005D24CD201E627300F2C0C7 /* StashCoachUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005D24CC201E627300F2C0C7 /* StashCoachUITests.swift */; };
 		005D24E7201E634500F2C0C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 005D24E3201E634500F2C0C7 /* Assets.xcassets */; };
 		005D24EC201E635500F2C0C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 005D24E8201E635500F2C0C7 /* LaunchScreen.storyboard */; };
 		005D24ED201E635500F2C0C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 005D24EA201E635500F2C0C7 /* Main.storyboard */; };
@@ -18,6 +16,28 @@
 		005D2500201E6AD900F2C0C7 /* AchievementLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005D24FF201E6AD900F2C0C7 /* AchievementLoadable.swift */; };
 		005D2502201E6DB000F2C0C7 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005D2501201E6DB000F2C0C7 /* Constants.swift */; };
 		005D2504201E708F00F2C0C7 /* IBInspectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005D2503201E708F00F2C0C7 /* IBInspectable.swift */; };
+		00DDBC502023A0F400CF48BB /* AchievementsViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00DDBC4F2023A0F400CF48BB /* AchievementsViewControllerTests.swift */; };
+		00DDBC522023A30A00CF48BB /* AchievementCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00DDBC512023A30A00CF48BB /* AchievementCellTests.swift */; };
+		00DDBC542023AD2000CF48BB /* AchievementsPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00DDBC532023AD2000CF48BB /* AchievementsPresenterTests.swift */; };
+		00DDBC572023AD9A00CF48BB /* AchievementsInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00DDBC562023AD9A00CF48BB /* AchievementsInteractorTests.swift */; };
+		00DDBC5A2023AE3900CF48BB /* AchievementsCacheDataManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00DDBC592023AE3900CF48BB /* AchievementsCacheDataManagerTests.swift */; };
+		00DDBC5D2023B0FE00CF48BB /* UIColorExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00DDBC5C2023B0FE00CF48BB /* UIColorExtensionTests.swift */; };
+		00DDBC5F2023B18200CF48BB /* AchievementTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00DDBC5E2023B18200CF48BB /* AchievementTests.swift */; };
+		00DDBC612023B33F00CF48BB /* RootWireframeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00DDBC602023B33F00CF48BB /* RootWireframeTests.swift */; };
+		00DDBC632023B5D000CF48BB /* AchievementsRemoteDataManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00DDBC622023B5D000CF48BB /* AchievementsRemoteDataManagerTests.swift */; };
+		00DDBC652023B66C00CF48BB /* MockCacheStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00DDBC642023B66C00CF48BB /* MockCacheStore.swift */; };
+		00DDBC672023BACD00CF48BB /* MockCacheDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00DDBC662023BACC00CF48BB /* MockCacheDataManager.swift */; };
+		00DDBC692023BAE400CF48BB /* MockRemoteDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00DDBC682023BAE400CF48BB /* MockRemoteDataManager.swift */; };
+		00DDBC6B2023BAFC00CF48BB /* MockAchievementsInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00DDBC6A2023BAFC00CF48BB /* MockAchievementsInteractorOutput.swift */; };
+		00DDBC6D2023BCFE00CF48BB /* AchievementsWireframeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00DDBC6C2023BCFE00CF48BB /* AchievementsWireframeTests.swift */; };
+		00DDBC6F2023BD6200CF48BB /* AppDependenciesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00DDBC6E2023BD6200CF48BB /* AppDependenciesTests.swift */; };
+		00DDBC712023BDD100CF48BB /* AppDelegateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00DDBC702023BDD100CF48BB /* AppDelegateTests.swift */; };
+		00DDBC732023C03D00CF48BB /* MockRootWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00DDBC722023C03D00CF48BB /* MockRootWireframe.swift */; };
+		00DDBC752023C18F00CF48BB /* MockAchievementsInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00DDBC742023C18F00CF48BB /* MockAchievementsInteractorInput.swift */; };
+		00DDBC782023C24B00CF48BB /* MockAchievementLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00DDBC772023C24B00CF48BB /* MockAchievementLoadable.swift */; };
+		00DDBC7A2023C45400CF48BB /* CacheStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00DDBC792023C45400CF48BB /* CacheStoreTests.swift */; };
+		00DDBC7C2023C5D400CF48BB /* MockAchievementsWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00DDBC7B2023C5D400CF48BB /* MockAchievementsWireframe.swift */; };
+		00DDBC7E2023C7AF00CF48BB /* MockAppDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00DDBC7D2023C7AF00CF48BB /* MockAppDependencies.swift */; };
 		00E3A9BB201E837B00162297 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E3A9BA201E837B00162297 /* UIColorExtension.swift */; };
 		00E3A9BD201E895400162297 /* AchievementsInteractorIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E3A9BC201E895400162297 /* AchievementsInteractorIO.swift */; };
 		00E3A9BF201E89AE00162297 /* Achievement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E3A9BE201E89AE00162297 /* Achievement.swift */; };
@@ -56,10 +76,8 @@
 		005D24A9201E627300F2C0C7 /* StashCoach.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StashCoach.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		005D24AC201E627300F2C0C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		005D24BD201E627300F2C0C7 /* StashCoachTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StashCoachTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		005D24C1201E627300F2C0C7 /* StashCoachTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StashCoachTests.swift; sourceTree = "<group>"; };
 		005D24C3201E627300F2C0C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		005D24C8201E627300F2C0C7 /* StashCoachUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StashCoachUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		005D24CC201E627300F2C0C7 /* StashCoachUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StashCoachUITests.swift; sourceTree = "<group>"; };
 		005D24CE201E627300F2C0C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		005D24E2201E634500F2C0C7 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		005D24E3201E634500F2C0C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -70,6 +88,28 @@
 		005D24FF201E6AD900F2C0C7 /* AchievementLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementLoadable.swift; sourceTree = "<group>"; };
 		005D2501201E6DB000F2C0C7 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		005D2503201E708F00F2C0C7 /* IBInspectable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IBInspectable.swift; sourceTree = "<group>"; };
+		00DDBC4F2023A0F400CF48BB /* AchievementsViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsViewControllerTests.swift; sourceTree = "<group>"; };
+		00DDBC512023A30A00CF48BB /* AchievementCellTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementCellTests.swift; sourceTree = "<group>"; };
+		00DDBC532023AD2000CF48BB /* AchievementsPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsPresenterTests.swift; sourceTree = "<group>"; };
+		00DDBC562023AD9A00CF48BB /* AchievementsInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsInteractorTests.swift; sourceTree = "<group>"; };
+		00DDBC592023AE3900CF48BB /* AchievementsCacheDataManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsCacheDataManagerTests.swift; sourceTree = "<group>"; };
+		00DDBC5C2023B0FE00CF48BB /* UIColorExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtensionTests.swift; sourceTree = "<group>"; };
+		00DDBC5E2023B18200CF48BB /* AchievementTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementTests.swift; sourceTree = "<group>"; };
+		00DDBC602023B33F00CF48BB /* RootWireframeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootWireframeTests.swift; sourceTree = "<group>"; };
+		00DDBC622023B5D000CF48BB /* AchievementsRemoteDataManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsRemoteDataManagerTests.swift; sourceTree = "<group>"; };
+		00DDBC642023B66C00CF48BB /* MockCacheStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockCacheStore.swift; sourceTree = "<group>"; };
+		00DDBC662023BACC00CF48BB /* MockCacheDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockCacheDataManager.swift; sourceTree = "<group>"; };
+		00DDBC682023BAE400CF48BB /* MockRemoteDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockRemoteDataManager.swift; sourceTree = "<group>"; };
+		00DDBC6A2023BAFC00CF48BB /* MockAchievementsInteractorOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAchievementsInteractorOutput.swift; sourceTree = "<group>"; };
+		00DDBC6C2023BCFE00CF48BB /* AchievementsWireframeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsWireframeTests.swift; sourceTree = "<group>"; };
+		00DDBC6E2023BD6200CF48BB /* AppDependenciesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDependenciesTests.swift; sourceTree = "<group>"; };
+		00DDBC702023BDD100CF48BB /* AppDelegateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegateTests.swift; sourceTree = "<group>"; };
+		00DDBC722023C03D00CF48BB /* MockRootWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockRootWireframe.swift; sourceTree = "<group>"; };
+		00DDBC742023C18F00CF48BB /* MockAchievementsInteractorInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAchievementsInteractorInput.swift; sourceTree = "<group>"; };
+		00DDBC772023C24B00CF48BB /* MockAchievementLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAchievementLoadable.swift; sourceTree = "<group>"; };
+		00DDBC792023C45400CF48BB /* CacheStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheStoreTests.swift; sourceTree = "<group>"; };
+		00DDBC7B2023C5D400CF48BB /* MockAchievementsWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAchievementsWireframe.swift; sourceTree = "<group>"; };
+		00DDBC7D2023C7AF00CF48BB /* MockAppDependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAppDependencies.swift; sourceTree = "<group>"; };
 		00E3A9BA201E837B00162297 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		00E3A9BC201E895400162297 /* AchievementsInteractorIO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsInteractorIO.swift; sourceTree = "<group>"; };
 		00E3A9BE201E89AE00162297 /* Achievement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Achievement.swift; sourceTree = "<group>"; };
@@ -147,7 +187,11 @@
 		005D24C0201E627300F2C0C7 /* StashCoachTests */ = {
 			isa = PBXGroup;
 			children = (
-				005D24C1201E627300F2C0C7 /* StashCoachTests.swift */,
+				00DDBC4320239F9500CF48BB /* Common */,
+				00DDBC442023A01800CF48BB /* Modules */,
+				00DDBC702023BDD100CF48BB /* AppDelegateTests.swift */,
+				00DDBC7D2023C7AF00CF48BB /* MockAppDependencies.swift */,
+				00DDBC6E2023BD6200CF48BB /* AppDependenciesTests.swift */,
 				005D24C3201E627300F2C0C7 /* Info.plist */,
 			);
 			path = StashCoachTests;
@@ -156,7 +200,6 @@
 		005D24CB201E627300F2C0C7 /* StashCoachUITests */ = {
 			isa = PBXGroup;
 			children = (
-				005D24CC201E627300F2C0C7 /* StashCoachUITests.swift */,
 				005D24CE201E627300F2C0C7 /* Info.plist */,
 			);
 			path = StashCoachUITests;
@@ -166,7 +209,7 @@
 			isa = PBXGroup;
 			children = (
 				005D24F9201E692700F2C0C7 /* Extensions */,
-				005D24FA201E693900F2C0C7 /* Model */,
+				005D24FA201E693900F2C0C7 /* Entity */,
 				005D24FC201E695000F2C0C7 /* Cache */,
 				005D24FB201E694400F2C0C7 /* View */,
 			);
@@ -285,13 +328,13 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		005D24FA201E693900F2C0C7 /* Model */ = {
+		005D24FA201E693900F2C0C7 /* Entity */ = {
 			isa = PBXGroup;
 			children = (
 				00E3A9BE201E89AE00162297 /* Achievement.swift */,
 				00E3A9D6201EB22100162297 /* ServerResponse.swift */,
 			);
-			path = Model;
+			path = Entity;
 			sourceTree = "<group>";
 		};
 		005D24FB201E694400F2C0C7 /* View */ = {
@@ -306,6 +349,135 @@
 			isa = PBXGroup;
 			children = (
 				00E3A9C4201E8C5700162297 /* CacheStore.swift */,
+			);
+			path = Cache;
+			sourceTree = "<group>";
+		};
+		00DDBC4320239F9500CF48BB /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				00DDBC5B2023B0EC00CF48BB /* Extensions */,
+				00DDBC452023A02C00CF48BB /* Entity */,
+				00DDBC762023C1F700CF48BB /* Cache */,
+				00DDBC462023A03400CF48BB /* View */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		00DDBC442023A01800CF48BB /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				00DDBC472023A06100CF48BB /* Achievements */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		00DDBC452023A02C00CF48BB /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				00DDBC5E2023B18200CF48BB /* AchievementTests.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		00DDBC462023A03400CF48BB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				00DDBC722023C03D00CF48BB /* MockRootWireframe.swift */,
+				00DDBC602023B33F00CF48BB /* RootWireframeTests.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		00DDBC472023A06100CF48BB /* Achievements */ = {
+			isa = PBXGroup;
+			children = (
+				00DDBC482023A06D00CF48BB /* Application Logic */,
+				00DDBC4B2023A08000CF48BB /* User Interface */,
+			);
+			path = Achievements;
+			sourceTree = "<group>";
+		};
+		00DDBC482023A06D00CF48BB /* Application Logic */ = {
+			isa = PBXGroup;
+			children = (
+				00DDBC552023AD8A00CF48BB /* Interactor */,
+				00DDBC582023AE2100CF48BB /* Manager */,
+			);
+			path = "Application Logic";
+			sourceTree = "<group>";
+		};
+		00DDBC4B2023A08000CF48BB /* User Interface */ = {
+			isa = PBXGroup;
+			children = (
+				00DDBC4C2023A08D00CF48BB /* Presenter */,
+				00DDBC4D2023A09100CF48BB /* View */,
+				00DDBC4E2023A09500CF48BB /* Wireframe */,
+			);
+			path = "User Interface";
+			sourceTree = "<group>";
+		};
+		00DDBC4C2023A08D00CF48BB /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				00DDBC532023AD2000CF48BB /* AchievementsPresenterTests.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		00DDBC4D2023A09100CF48BB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				00DDBC772023C24B00CF48BB /* MockAchievementLoadable.swift */,
+				00DDBC512023A30A00CF48BB /* AchievementCellTests.swift */,
+				00DDBC4F2023A0F400CF48BB /* AchievementsViewControllerTests.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		00DDBC4E2023A09500CF48BB /* Wireframe */ = {
+			isa = PBXGroup;
+			children = (
+				00DDBC7B2023C5D400CF48BB /* MockAchievementsWireframe.swift */,
+				00DDBC6C2023BCFE00CF48BB /* AchievementsWireframeTests.swift */,
+			);
+			path = Wireframe;
+			sourceTree = "<group>";
+		};
+		00DDBC552023AD8A00CF48BB /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				00DDBC742023C18F00CF48BB /* MockAchievementsInteractorInput.swift */,
+				00DDBC6A2023BAFC00CF48BB /* MockAchievementsInteractorOutput.swift */,
+				00DDBC562023AD9A00CF48BB /* AchievementsInteractorTests.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		00DDBC582023AE2100CF48BB /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				00DDBC662023BACC00CF48BB /* MockCacheDataManager.swift */,
+				00DDBC682023BAE400CF48BB /* MockRemoteDataManager.swift */,
+				00DDBC592023AE3900CF48BB /* AchievementsCacheDataManagerTests.swift */,
+				00DDBC622023B5D000CF48BB /* AchievementsRemoteDataManagerTests.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		00DDBC5B2023B0EC00CF48BB /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				00DDBC5C2023B0FE00CF48BB /* UIColorExtensionTests.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		00DDBC762023C1F700CF48BB /* Cache */ = {
+			isa = PBXGroup;
+			children = (
+				00DDBC642023B66C00CF48BB /* MockCacheStore.swift */,
+				00DDBC792023C45400CF48BB /* CacheStoreTests.swift */,
 			);
 			path = Cache;
 			sourceTree = "<group>";
@@ -472,7 +644,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				005D24C2201E627300F2C0C7 /* StashCoachTests.swift in Sources */,
+				00DDBC712023BDD100CF48BB /* AppDelegateTests.swift in Sources */,
+				00DDBC752023C18F00CF48BB /* MockAchievementsInteractorInput.swift in Sources */,
+				00DDBC6F2023BD6200CF48BB /* AppDependenciesTests.swift in Sources */,
+				00DDBC6D2023BCFE00CF48BB /* AchievementsWireframeTests.swift in Sources */,
+				00DDBC7A2023C45400CF48BB /* CacheStoreTests.swift in Sources */,
+				00DDBC732023C03D00CF48BB /* MockRootWireframe.swift in Sources */,
+				00DDBC672023BACD00CF48BB /* MockCacheDataManager.swift in Sources */,
+				00DDBC542023AD2000CF48BB /* AchievementsPresenterTests.swift in Sources */,
+				00DDBC502023A0F400CF48BB /* AchievementsViewControllerTests.swift in Sources */,
+				00DDBC6B2023BAFC00CF48BB /* MockAchievementsInteractorOutput.swift in Sources */,
+				00DDBC7E2023C7AF00CF48BB /* MockAppDependencies.swift in Sources */,
+				00DDBC572023AD9A00CF48BB /* AchievementsInteractorTests.swift in Sources */,
+				00DDBC692023BAE400CF48BB /* MockRemoteDataManager.swift in Sources */,
+				00DDBC522023A30A00CF48BB /* AchievementCellTests.swift in Sources */,
+				00DDBC5D2023B0FE00CF48BB /* UIColorExtensionTests.swift in Sources */,
+				00DDBC632023B5D000CF48BB /* AchievementsRemoteDataManagerTests.swift in Sources */,
+				00DDBC782023C24B00CF48BB /* MockAchievementLoadable.swift in Sources */,
+				00DDBC5F2023B18200CF48BB /* AchievementTests.swift in Sources */,
+				00DDBC5A2023AE3900CF48BB /* AchievementsCacheDataManagerTests.swift in Sources */,
+				00DDBC612023B33F00CF48BB /* RootWireframeTests.swift in Sources */,
+				00DDBC652023B66C00CF48BB /* MockCacheStore.swift in Sources */,
+				00DDBC7C2023C5D400CF48BB /* MockAchievementsWireframe.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -480,7 +673,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				005D24CD201E627300F2C0C7 /* StashCoachUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

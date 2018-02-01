@@ -13,11 +13,12 @@ class AchievementsRemoteDataManager {
     // MARK: Properties
 
     var cache: CacheStore?
+    var path = Bundle.main.path(forResource: "achievements", ofType: "json")
 
     // MARK: Fetch
 
     func achievements(completion: @escaping ([Achievement]?) -> Void) {
-        guard let path = Bundle.main.path(forResource: "achievements", ofType: "json") else {
+        guard let path = path else {
             completion(nil)
             return
         }

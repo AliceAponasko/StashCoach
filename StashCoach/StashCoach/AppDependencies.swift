@@ -48,7 +48,7 @@ class AppDependencies {
 
     // MARK: Helpers
 
-    func showRootVC(in widnow: UIWindow) {
-        achievementsWireframe?.showAchievementsInterface(in: widnow)
+    func showRootVC(in window: UIWindow) {
+        achievementsWireframe?.showAchievementsInterface(in: window)
     }
 }
